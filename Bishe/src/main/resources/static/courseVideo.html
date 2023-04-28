@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courseVideo</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/courseVideo.css">
+    <!-- 引入Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+</head>
+<body>
+<div class="container">
+    <div class="row videoArea ">
+        <!-- 左侧视频播放窗口 -->
+        <div class="col-md-8 mt-4">
+            <video src="video/movie.mp4" controls></video>
+        </div>
+
+        <!-- 右侧视频简介 -->
+        <div class="col-md-4 bg-light" style="padding: 20px;">
+            <h2 style="color: #333; font-weight: bold;">视频标题</h2>
+            <p style="color: #999; font-size: 14px;">发布时间：2022年4月12日</p>
+            <div id="courseDiversity">
+                <h5>视频选集</h5>
+                <ul id="serialUl">
+<!--                    <li class="serial" >p1</li>-->
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                    <li class="serial" >p1</li>
+                    <li class="serial" >p2</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="like me-3">
+            <i class="far fa-thumbs-up"></i>
+            <span>点赞人数：1000人</span>
+        </div>
+        <div class="favorite">
+            <i class="far fa-bookmark"></i>
+            <span>收藏人数：1000人</span>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- 评论区 -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h4 class="mb-4">留言区</h4>
+            <form>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="请留下您的评论" id="comment-textarea"
+                              style="height: 150px"></textarea>
+                    <label for="comment-textarea">评论内容</label>
+                </div>
+                <button type="submit" class="btn btn-primary">提交评论</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h4 class="mb-4">最新评论</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-1">用户1</h5>
+                        <small class="text-muted">2023-04-08</small>
+                    </div>
+                    <p class="mb-1">这是一条评论内容</p>
+                    <small class="text-muted">来自邮箱：user1@example.com</small>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-1">用户2</h5>
+                        <small class="text-muted">2023-04-07</small>
+                    </div>
+                    <p class="mb-1">这是另一条评论内容</p>
+                    <small class="text-muted">来自邮箱：user2@example.com</small>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-1">用户3</h5>
+                        <small class="text-muted">2023-04-06</small>
+                    </div>
+                    <p class="mb-1">这是第三条评论内容</p>
+                    <small class="text-muted">来自邮箱：user3@example.com</small>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.4.js" type="text/javascript" charSet="UTF-8"></script>
+<script src="js/courseVideo.js"></script>
+<script src="js/index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    z-index: 15;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    background-color: #f62d51;
+}

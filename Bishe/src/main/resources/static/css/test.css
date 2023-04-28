@@ -1,0 +1,57 @@
+/* 设置视频介绍板块的样式 */
+.video-info {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.video-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.video-info p {
+    margin-bottom: 1rem;
+}
+
+.video-info .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+/* 设置评论区的样式 */
+.comments {
+    margin-top: 2rem;
+}
+
+.comments h3 {
+    margin-bottom: 1rem;
+}
+
+.comments form {
+    margin-bottom: 1rem;
+}
+
+.comments-list {
+    margin-top: 1rem;
+}
+
+.comment {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.comment h5 {
+    margin-bottom: 0.5rem;
+}
+
+.comment span {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.comment p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+    <script type="text/javascript">
+        function showPageATable(){
+            debugger;
+            var parentWin = window.opener ;
+            //获取父窗口 一个带Id 的元素。
+            var myTable = parentWin.document.getElementById('myTable');
+            document.getElementById("pageBTable").innerHTML = myTable.innerHTML;
+        }
+        window.οnlοad=showPageATable;
+    </script>
+</head>
+<body>
+<table id="pageBTable" style="color:Red;border-collapse:collapse;border:solid 1px red;" cellpadding="2" cellspacing="1">
+</table>
+</body>
+</html>

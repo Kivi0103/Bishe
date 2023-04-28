@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row videoArea ">
+        <!-- 左侧视频播放窗口 -->
+        <div class="col-md-8 mt-4">
+            <video id = "courseVideo" controls>
+            </video>
+        </div>
+
+        <!-- 右侧视频简介 -->
+        <div class="col-md-4 bg-light mt-4 brief_intro" style="padding: 20px;">
+            <h2 style="color: #333; font-weight: bold;" class="videoName">
+            </h2>
+            <p style="color: #999; font-size: 14px;" class = "dateP">
+                 <img src="./icons/publishTime.png" alt="Login Icon" width="20" height="20">&nbsp
+                 发布时间：<span class="publishDate"></span>
+            </p>
+             <div id="courseDiversity">
+                  <h5>视频选集</h5>
+                  <ul id="serialUl">
+<!--                    <li class="serial" >p1</li>-->
+                  </ul>
+             </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="likediv me-3" >
+            <div class = "like"> <i class="far fa-thumbs-up"></i></div>
+            <span>点赞：<span class = "likeNum"></span></span>
+        </div>
+        <div class="favoritediv me-3">
+            <div class = "favorite"><i class="far fa-bookmark"></i></div>
+            <span>收藏：<span class = "colNum"></span></span>
+        </div>
+    </div>
+
+        <div class="row mt-4" id="courseIntroRow">
+                <h4 style="color: #666; font-size: 16px; line-height: 24px;">
+                    <img src="./icons/courseBriefIntro.png" alt="Login Icon" width="25" height="25">&nbsp
+                        视频简介信息:
+                </h4>
+                <p class="col-md-8 overflow-hidden" id="courseIntro">
+                </p>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- 评论区 -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h4 class="mt-4">留言区&nbsp&nbsp<img src="./icons/MessageBoard.png" alt="Login Icon" width="30" height="30"></h4>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" style="height: 150px" id="comment_text"></textarea>
+                    <label for="comment_text">良言一句三冬暖，恶语伤人六月寒，请留下您的友好评论
+                    &nbsp&nbsp<img src="./icons/love.png" alt="Login Icon" width="18" height="18">
+                    </label>
+                </div>
+                <button class="btn btn-primary" id = "submit_comment">提交评论</button>
+        </div>
+        <div class="col-md-4 mt-1" id ="commentArea">
+            <h4 class="mt-4">过往留言&nbsp;&nbsp;<img src="./icons/preComments.png" alt="Login Icon" width="30" height="30"></h4></h4>
+            <ul class="list-group-comments">
+            </ul>
+        </div>
+    </div>
+</div>

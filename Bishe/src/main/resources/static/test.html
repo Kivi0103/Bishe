@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 引入Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--    //引入外部自己写的css-->
+    <!--    <link rel="stylesheet" href="css/index.css">-->
+    <!--    <link rel="stylesheet" href="css/primarySchool.css">-->
+    <!--    <link rel="stylesheet" href="css/homePage.css">-->
+    <!--    <link rel="stylesheet" href="css/courseVideo.css">-->
+    <style type="text/css">
+        /* Hide the text input by default */
+    </style>
+
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    更改用户信息
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">更改用户信息</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="col-form-label">用户名:</label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <div>
+                            <label for="age" class="col-form-label">年龄:</label>
+                            <select class="form-select" id="age">
+                                <option selected>请选择年龄</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="sex" class="col-form-label">性别:</label><br>
+                            <select class="form-select" id="sex">
+                                <option selected value="null">请选择性别</option>
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">手机号:</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="col-form-label">性别:</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">男</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">女</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="school" class="col-form-label">学校:</label>
+                        <input type="text" class="form-control" id="school">
+                    </div>
+                    <div class="mb-3">
+                        <label for="education" class="col-form-label">学习阶段:</label>
+                        <select class="form-select" id="education">
+                            <option selected>请选择学习阶段</option>
+                            <option value="primary">小学</option>
+                            <option value="middle">初中</option>
+                            <option value="high">高中</option>
+                            <option value="university">大学</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.4.js" type="text/javascript" charSet="UTF-8"></script>
+<script type="text/javascript">
+    // Get the age select element
+    const ageSelect = document.getElementById("age");
+    // Loop through numbers 1-100 and create an option element for each number
+    for (let i = 1; i <= 100; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        ageSelect.appendChild(option);
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+.container {
+    background-color: rgb(253, 253, 254);
+}
+
+/* .videoArea {
+    background-color: green;
+} */
+
+/*.courseInfo {*/
+/*    width: 30%;*/
+/*    height: 100%;*/
+/*    background-color: blue;*/
+/*}*/
+
+/* 将视频播放窗口上下居中 */
+.embed-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 将视频简介卡片的背景色改为灰色 */
+.card {
+    background-color: #f0f0f0;
+}
+
+video {
+    width: 100%;
+}
+
+
+
+
+/* 视频区域 */
+.videoArea {
+    margin-top: 30px;
+}
+
+/* 视频标题 */
+.videoArea h2 {
+    margin-bottom: 20px;
+}
+.videoName{
+    border-bottom: 2px solid #B3B3B3;
+}
+
+#courseDiversity{
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding-right: 1rem;
+    width: 384px;
+    height: 360px;
+    background-color: #f0f1f2;
+    border-radius: 5px;
+}
+
+#courseDiversity h5{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #342b29;
+    border-bottom: 1px solid #B3B3B3;
+}
+.serial{
+    font-size: 0.5rem;
+}
+
+.dateP{
+    padding-bottom: 5px;
+    text-align: right;
+}
+#serialUl{
+    padding-left: 1rem;
+}
+
+.serial{
+    font-size: 1.2rem;
+    display: block;
+    height: 12%;
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.serial:hover{
+    background-color: #fdfdfe;
+    cursor: pointer;
+}
+
+#courseIntro{
+    margin-right: 2rem;
+    background-color: #f7f8f9;
+}
+
+/* 点赞和收藏按钮 */
+.like,
+.favorite {
+    padding: 5px 5px;
+    border-radius: 50%;
+    display: inline;
+}
+
+.likediv,
+.favoritediv {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.like i,
+.favorite i {
+    font-size: 20px;
+}
+
+.like.active,
+.favorite.active {
+    background-color: rgb(235, 80, 80);
+    color: #fff;
+}
+
+/* 留言区 */
+#comment-textarea {
+    resize: none;
+}
+#commentArea{
+    border-radius:5px;
+    background-color: #f7f8f9;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.list-group-comments{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding-right: 32px;
+}
+
+.list-group-item {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #cecdcd;
+    padding: 5px;
+}
+
+.list-group-item p {
+    margin-bottom: 5px;
+}
+
+.list-group-item small {
+    color: #999;
+}

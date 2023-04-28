@@ -1,0 +1,41 @@
+
+/*课程选项导航栏*/
+#header1{
+    position: sticky;
+    top: 0px;
+}
+
+#header1 .navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+#header1 ul li:hover{
+    top: -8px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+#header1 .nav-item {
+    margin-right: 12px;
+}
+
+#header1 .nav-link {
+    font-size: 15px;
+    color: #333333;
+}
+
+#header1 .btn-outline-secondary {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 17px;
+}
+
+
+#carouselExampleIndicators {
+    height: 20vh;
+}
+#carouselExampleIndicators .carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}

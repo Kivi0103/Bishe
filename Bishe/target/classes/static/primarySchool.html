@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primarySchool</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/primarySchool.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!-- 折叠导航栏 -->
+<div class="container" id="header">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- 网站标题 -->
+        <a class="navbar-brand" href="#">OnlineLearning</a>
+
+        <!-- 折叠 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 导航栏选项 -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./primarySchool.html">小学</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">初中</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">高中</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">大学</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="LSbtns">
+            <button type="button" class="btn btn-outline-secondary me-3" data-bs-toggle="modal" data-bs-target="#login"
+                    id="nav_btn_login">登录
+            </button>
+            <a class="btn btn-outline-secondary me-3" href="register.html" id="nav_btn_signup">免费注册</a>
+
+        </div>
+    </nav>
+</div>
+
+<!-- 登录模态框 -->
+<div class="modal fade" id="login">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <h4 class="modal-title">用户登录</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" id="btn_close_login"></button>
+            </div>
+
+            <!-- 模态框内容 -->
+            <div class="modal-body">
+                <div class="xtx-login-main">
+                    <!--           在表单元素中加入   onsubmit="return false  设置表单不提交，由ajax提交-->
+                    <form name="login_form" method="post" onsubmit="return false">
+                        <div class="tab-pane">
+                            <div>
+                                <br>
+                            </div>
+                            <div class="input">
+                                <span class="iconfont icon-zhanghao"></span>
+                                <input required type="text" placeholder="请输入用户名称/手机号码" id="username_input"
+                                       name="username">
+                            </div>
+                            <div class="input">
+                                <span class="iconfont icon-suo"></span>
+                                <input required type="password" id="password_input" placeholder="请输入密码" name="password">
+                            </div>
+                            <div><br></div>
+                            <div class="button clearfix">
+                                <button type="submit" class="dl" id="btn_login">登 录</button>
+                                <!-- <a class="dl" href="./center.html">登 录</a> -->
+                                <a class="fl" href="./forget.html">忘记密码？</a>
+                                <a class="btn btn-outline-secondary" style="margin-left: 50%;"
+                                   href="register.html">免费注册</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--次导航栏-->
+<div class="container mt-3" id="header1">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light " id="nav1">
+        <!-- 网站标题 -->
+        <a class="navbar-brand me-3" href="#"
+           style="margin-left: 20px;border-right: 3px solid #454444;padding-right: 10px">小学</a>
+
+        <!-- 折叠 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 导航栏选项 -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommend_math">数学</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommend_chinese">语文</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommend_english">英语</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">音乐</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommend_science" id="opt_sci">科学</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<!-- 轮播图 -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 20vh;">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 20vh;">
+        <div class="carousel-item active">
+            <img src="./images/school01.jpg" class="d-block">
+            <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/school02.jpg" class="d-block">
+            <div class="carousel-caption">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/school03.jpg" class="d-block">
+            <div class="carousel-caption">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- 数学课程推荐 -->
+<div class="container mt-4 mb-4 pb-4 recommend" id="recommend_math">
+    <p class="mb-4" style="font-size: 20px;color: #494949">数学课程推荐</p>
+    <div class="row row-cols-md-5 row-cols-sm-3 row-cols-2 g-4">
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/8A2BE2/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FFD700/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/87CEEB/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/008000/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FF1493/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 语文课程推荐 -->
+<div class="container mt-4 mb-4 pb-4 recommend" id="recommend_chinese">
+    <p class="mb-4" style="font-size: 20px;color: #494949">语文课程推荐</p>
+    <div class="row row-cols-md-5 row-cols-sm-3 row-cols-2 g-4">
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/8A2BE2/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FFD700/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/87CEEB/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/008000/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FF1493/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 英语课程推荐 -->
+<div class="container mt-4 mb-4 pb-4 recommend" id="recommend_english">
+    <p class="mb-4" style="font-size: 20px;color: #494949">英语课程推荐</p>
+    <div class="row row-cols-md-5 row-cols-sm-3 row-cols-2 g-4">
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/8A2BE2/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FFD700/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/87CEEB/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/008000/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FF1493/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 科学课程推荐 -->
+<div class="container mt-4 mb-4 pb-4 recommend" id="recommend_science">
+    <p class="mb-4" style="font-size: 20px;color: #494949">科学课程推荐</p>
+    <div class="row row-cols-md-5 row-cols-sm-3 row-cols-2 g-4">
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/8A2BE2/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FFD700/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/87CEEB/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/008000/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/FF1493/000000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">商品名称</h5>
+                        <p class="card-text overflow-hidden" title="商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。">
+                            商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。商品描述。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.4.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
